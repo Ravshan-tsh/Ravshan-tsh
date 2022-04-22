@@ -205,6 +205,7 @@ input:checked+.slider:before{
     color: white;
     background: rgb(0,0,0,0.7);
     transition: .4s all ease-in-out;
+    cursor: pointer;
 }
 
 .sign-facebook{
@@ -216,6 +217,7 @@ input:checked+.slider:before{
     color: white;
     background: rgb(0,0,0,0.7);
     transition: .4s all ease-in-out;
+    cursor: pointer;
 }
 
 .sign-twitter{
@@ -227,6 +229,7 @@ input:checked+.slider:before{
     color: white;
     background: rgb(0,0,0,0.7);
     transition: .4s all ease-in-out;
+    cursor: pointer;
 }
 .sign-google:hover{
     content: url("icons/google.svg");
@@ -261,6 +264,7 @@ input:checked+.slider:before{
     background: rgb(0,0,0,0.6);
     font-size: 20px;
     transition: 0.4s transform ease-in-out;
+    cursor: pointer;
 }
 .media-link a{
     color: white;

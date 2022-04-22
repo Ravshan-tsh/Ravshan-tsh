@@ -1,0 +1,345 @@
+@font-face {
+    font-family: fa-brands;
+    src: url("fonts/fa-brands-400.ttf");
+}
+@font-face {
+    font-family: bio-rhyme-regular;
+    src: url("fonts/BioRhyme-Regular.ttf");
+}
+@font-face {
+    font-family: fa-regular;
+    src: url("fonts/fa-regular-400.ttf");
+}
+@font-face {
+    font-family: poppins-light;
+    src: url("fonts/Poppins-Light.ttf");
+}
+::-webkit-scrollbar{
+    width: 5px;
+    color: red;
+}
+::-webkit-scrollbar-track{
+    box-shadow: 0px 0px 3px black inset;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: rgb(0,0,0, 0.2);
+}
+
+.main{
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/1231622/pexels-photo-1231622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
+    background-size: cover;
+}
+.site-name{
+    height: 10%;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.register-banner{
+    height: 78%;
+}
+.register-window{
+    width: 100%;
+    height: 95%;
+    margin: 90px;
+    border-radius: 40px;
+    background: rgb(255,255,255,0.8);
+    box-shadow: 0px 0px 50px rgb(33, 33, 33);
+}
+.content-image{
+    height: 100%;
+    padding: 30px;
+}
+.image{
+    background: url("https://images.pexels.com/photos/1910225/pexels-photo-1910225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px black;
+    height: 100%;
+    width: 100%;
+}
+.sign-up{
+    width: 100%;
+    height: 500px !important;
+    position: relative;
+    display: flex;
+    align-items: flex-start !important;
+    height: 100%;
+}
+
+.sign-in {
+    width: 100%;
+    height: 500px !important;
+    position: absolute;
+    display: none;
+    align-items: flex-start !important;
+    height: 100%;
+    overflow-y: scroll;
+}
+.sign-in::-webkit-scrollbar{
+    width: 5px;
+    color: red;
+}
+.sign-in::-webkit-scrollbar-track{
+    box-shadow: 0px 0px 3px black inset;
+    border-radius: 20px;
+}
+.sign-in::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: rgb(0,0,0, 0.2);
+}
+.sign-up-text{
+    font-size: 25px;
+}
+.sign-up-go,.sign-in-go{
+    font-size: 18px;
+    text-indent: 12px;
+    color: blue;
+    font-weight: 650;
+    cursor: pointer;
+}
+.sign-in-text{
+    font-size: 25px;
+}
+.sign-up-form{
+}
+.sign-in-form{
+    width: 350px;
+}
+.field-group{
+    width: 100%;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding-left: 5px;
+    background-color: rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+}
+label{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: poppins-light;
+}
+.form-input{
+    height: 30px;
+    width: 100vh;
+    background-color: rgb(255,255,255,0);
+    border: 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: black;
+    outline: none;
+}
+.fa{
+    color: black;
+    font-size: 22px;
+}
+
+input.btn{
+    border-radius: 20px;
+    width: 80%;
+}
+.details{
+    cursor: pointer;
+}
+.switch{
+    font-size: 16px;
+    font-weight: 630;
+    display: flex;
+    align-items: center;
+}
+.switch input{
+    display: none;
+}
+.slider{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    width: 30px;
+    height: 18px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.15);
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    background-color: black;
+    border-radius: 50%  ;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked+.slider{
+    background: #dc3545;
+}
+input:checked+.slider:before{
+    background-color: white;
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(11px);
+}
+.forgot-password{
+    font-size: 16px;
+    font-weight: 630;
+    font-family: poppins-light;
+}
+.i-have-account{
+    font-size: 16px;
+    font-width: 800;
+}
+.sign-google{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    background: rgb(0,0,0,0.7);
+    transition: .4s all ease-in-out;
+}
+
+.sign-facebook{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    background: rgb(0,0,0,0.7);
+    transition: .4s all ease-in-out;
+}
+
+.sign-twitter{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    background: rgb(0,0,0,0.7);
+    transition: .4s all ease-in-out;
+}
+.sign-google:hover{
+    content: url("icons/google.svg");
+    transform: rotate(360deg);
+    background: white;
+    padding: 4px;
+}
+.sign-facebook:hover{
+    background: white;
+    color: #4267B2;
+    transform: rotate(360deg);
+}
+.sign-twitter:hover{
+    background: white;
+    color: #00acee;
+    transform: rotate(360deg);
+}
+.register-footer{
+    background: rgb(255,255,255,0.4);
+    height: 12%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.footer-content{
+    font-weight: 550;
+    font-family: bio-rhyme-regular;
+}
+.media-link{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgb(0,0,0,0.6);
+    font-size: 20px;
+    transition: 0.4s transform ease-in-out;
+}
+.media-link a{
+    color: white;
+}
+.media-link:hover{
+transform: rotate(360deg);
+background: white;
+}
+.facebook-link:hover a{
+    color: #4267B2;
+}
+.instagram-link:hover a{
+    color: #fb3958;
+}
+
+.twitter-link:hover a{
+    color: #00acee;
+}
+.gmail-link:hover a{
+    content: url("icons/gmail.svg");
+    padding: 6px;
+}
+.github-link:hover a{
+    color: #171515;
+}
+.linkedin-link:hover a{
+    color: #0A66C2;
+}
+.telegram-link:hover a{
+    color: #0088cc;
+}
+
+
+
+/*media styles*/
+@media (min-width: 1400px){
+    .sign-up-form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1399.99px) {
+    .sign-up-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1199.98px){
+    .register-window{
+        margin: 60px;
+    }
+    .sign-up-form{
+        width: 90%;
+    }
+}
+
+@media (max-width: 991.98px){
+    .register-window{
+        margin: 30px;
+    }
+    .sign-up-form{
+        width: 50%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .register-window{
+        margin: 15px;
+    }
+    .sign-up-form {
+        width: 85%;
+    }
+}
+
+@media (max-width: 575.98px){
+    .register-window{
+        margin: 10px;
+    }
+    .sign-up-form{
+        width: 100%;
+    }
+}
